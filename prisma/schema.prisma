@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model PwaStatistic {
+  id        Int      @id @default(autoincrement())
+  pwaId     Int
+  timestamp DateTime @default(now())
+  userAgent String?
+  ip        String?
+  referrer  String?
+}
