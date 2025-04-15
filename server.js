@@ -32,7 +32,7 @@ app.post('/api/pwa/open', async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Server running at http://localhost:3000');
+  console.log('Server running at https://my-pwa-app12.vercel.app/');
   const crypto = require('crypto');
 
 const TELEGRAM_BOT_TOKEN = '7625071117:AAGPPjZ9nzeGiSsO9GckxFRlherX4EPXVBE';
